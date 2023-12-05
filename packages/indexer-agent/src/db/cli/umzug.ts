@@ -48,6 +48,9 @@ const sequelize = new Sequelize({
     min: 0,
   },
   logging: false,
+  dialectOptions: {
+    ssl: true,
+  },
 })
 
 logger.debug('Successfully connected to DB', { name: database })
